@@ -1,0 +1,54 @@
+
+.header {
+   
+    position: fixed; /* Make header fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    height: 100px;
+    padding: 0 20px;
+    z-index: 1000; 
+    flex-wrap: wrap;
+    
+    .header__logo {
+        display: flex;  /* Align logo and text in a row */
+        align-items: center;  /* Vertically center items */
+        text-decoration: none;
+
+        .logo {
+            width: 40px;  /* Set a specific width for the logo */
+            height: 40px;  /* Set a specific height */
+            object-fit: contain;  /* Maintain aspect ratio */
+        }
+
+        h5 {
+            color: white;
+            font-weight: 300;
+            margin-left: 10px;  /* Space between logo and text */
+            font-size: 1.5rem;  /* Adjust font size if needed */
+            margin: 0;  /* Remove any margin */
+        }
+    }
+
+    .header__buttons {
+        display: flex;
+        gap: 10px;
+    }
+
+    .button {
+        background-color: white;
+        color: #000;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #f1f1f1;
+        }
+    }
+}

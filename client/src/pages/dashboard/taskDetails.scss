@@ -1,0 +1,98 @@
+.dashboard {
+    display: flex;
+    font-size: 18px;
+    height: 100vh;
+  }
+  
+  .dashboard__left {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  .dashboard_left_nav {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dashboard_left_nav a {
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+  }
+  
+  .dashboard_left_nav a:hover {
+    color: #007bff;
+  }
+  
+  .task-details__right {
+    flex: 1;
+    padding: 20px;
+    font-size: 20px;
+    display: block; /* Changed to block */
+    overflow-y: auto;
+  }
+  
+  .task-details__right h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .progress-chart h3,
+  .progress-table h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  /* Adjust Pie chart size */
+  .progress-chart {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .progress-table {
+    width: 100%; /* Make the table take full width */
+    margin-top: 30px;
+    display: block; /* Changed to block */
+    overflow-y: auto;
+    min-height: 300px; /* Ensure there's enough space for the table */
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    table-layout: fixed; /* Ensures consistent column width */
+  }
+  
+  th,
+  td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    word-wrap: break-word; /* Prevents text from overflowing */
+  }
+  
+  th {
+    background-color: #f4f4f4;
+    font-size: 22px;
+  }
+  
+  td {
+    font-size: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
